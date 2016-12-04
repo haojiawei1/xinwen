@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	 <script>
+    function resize(originSize,type){
+
+
+    var type=type||"x";
+    if(type=="x"){
+    var widths=document.documentElement.clientWidth;
+    var scale=widths/originSize*100;
+    }else if(type=="y"){
+    var heights=document.documentElement.clientHeight;
+    var scale=heights/originSize*100;
+    }
+
+    document.getElementsByTagName("html")[0].style.fontSize=scale+"px"
+    }
+    </script>
+    <link rel="stylesheet" href="font_l7k2ntapc39885mi/iconfont.css"/>
+    <style>
+    
+    	 html,body{
+           padding:0;
+           margin:0;
+           width:100%;
+           /*height:100%;*/
+          
+       }
+       *{
+       	padding: 0;
+       	margin: 0;
+       	list-style: none;
+       }
+       .top{
+       	width: 100%;
+       	height: 1.2rem;
+       	background: #F6F6F6;
+       	border-bottom:1px solid #ccc;
+        position: fixed;
+       	top: 0;
+       	left: 0;
+       }
+       .fanhui{
+       	position: absolute;
+       	left: 0.1rem;
+       	top: 0.3rem;
+       	font-size: 0.6rem;
+       	color: #999;
+       }
+       .snadian{
+       	position: absolute;
+       	top: 0.3rem;
+       	right: 0.3rem;
+       	font-size: 0.6rem;
+       	color: #999;
+       }
+       .xqbody{
+       	width:100%;
+       	background: #F0F0F0;
+       	padding: 0.3rem;
+       	box-sizing: border-box;
+       margin-top: 1.2rem;
+       }
+        .xqbiaoti .biaoti{
+        	display: block;
+       	font-size:0.4rem;
+       }
+        .xqbiaoti .sj{
+       	width: 100%;
+       	font-size: 0.3rem;
+       }
+       .sj span:nth-child(1){
+       	/*margin-left: 0.3rem;*/
+       	color: #999;
+       }
+        .sj span:nth-child(2){
+        	margin-left: 0.2rem;
+        	color: #999;
+        }
+        .pic{
+        	width: 6.7rem;
+        	height: 4.5rem;
+        	background:url(img/xq.png)no-repeat center;
+        	background-size:cover;
+        	border:5px solid #fff;
+        	margin-top: 0.3rem;
+        }
+        .picjs{
+        	font-size: 0.4rem;
+        	margin-top: 0.5rem;
+        	margin-bottom: 1rem;
+        }
+        
+        
+        .dianping{
+        	width: 100%;
+        	height: 1.2rem;
+        	background: #F6F6F6;
+        	border-top: 1px solid #ccc;
+        	position: fixed;
+        	bottom: 0;
+        	left: 0;
+        }
+        .dianping input{
+        	width:65%;
+        	height: 0.8rem;
+        	position: absolute;
+        	top: 0.2rem;
+        	left: 0.2rem;
+        	font-family: "黑体";
+        	font-size: 0.4rem;
+        	padding-left: 0.2rem;
+        	color: #999999;
+        }
+        .zz{
+        	position: absolute;
+        	right:1.3rem;
+        	top: 0.3rem;
+        	font-size: 0.6rem;
+        	color: #999;
+        }
+        .sc{
+        	position: absolute;
+        	right: 0.3rem;
+        	top: 0.2rem;
+        	font-size: 0.6rem;
+        	color: #999;
+        }
+        
+        
+       </style>
+</head>
+<body>
+     <div class="top">
+     	<div class="fanhui icon-fanhui iconfont"></div>
+     	<div class="snadian icon-apphengsandian iconfont"></div>
+     </div>
+     <div class="xqbody">
+     	<div class="xqbiaoti">
+     		<span class="biaoti">供应商福喜常年更改生产数据</span>
+     		<div class="sj">
+     			<span>京华时报</span>
+     			<span>07-21 02:04</span>
+     		</div>
+     	</div>
+     	<div class="xqneirong">
+     		<div class="pic"></div>
+     		<p class="picjs">
+     			昨天东方卫视今日播放暗访报道，称记者卧底两个多月发现，麦当劳、肯德基、必胜客等国际知名快餐连锁店的肉类供应商——上海福喜食品有限公司存在大量采用过期变质肉类原料的行为。
+     			上海福喜食品有限公司存在大量采用过期变质肉类原料的行为。
+     			上海福喜食品有限公司存在大量采用过期变质肉类原料的行为。
+     		</p>
+     	</div>
+     </div>
+     <div class="dianping">
+     	<input type="text" value="写点评" autocomplete="off" placeholder="用户名" tabindex="1">
+     	<div class="iconfont icon-fenxiang zz"></div>
+     	<div class="iconfont icon-shouc01 sc"></div>
+     </div>
+</body>
+<script>
+	resize(750)
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <script type="text/javascript">
+    	function resize(originSize,type){
+    var type=type||"x";
+    if(type=="x"){
+    var widths=document.documentElement.clientWidth;
+    var scale=widths/originSize*100;
+    }else if(type=="y"){
+    var heights=document.documentElement.clientHeight;
+    var scale=heights/originSize*100;
+    }
+
+    document.getElementsByTagName("html")[0].style.fontSize=scale+"px"
+    }
+   	
+   		
+    </script>
+    <style>
+    html,body{
+    	width: 100%;
+    	height: 100%;
+    	padding: 0;
+    	margin: 0;
+    	list-style:none;
+    }
+    	.box{
+    	    width:100%;
+    	    height:100%;
+    	    background: url(img/sss.png)no-repeat center center;
+    	    background-size:cover;
+    	}
+    </style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+<!--<script>
+	resize(750);
+</script>-->
+</html>
